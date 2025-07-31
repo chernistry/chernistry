@@ -22,7 +22,7 @@ I specialize in:
 
 ### Competency Chart
 
-<img src="chart.png" alt="Competency Chart" width="650"/>
+<!-- <img src="chart.png" alt="Competency Chart" width="650"/> -->
 
 ### Philosophy
 
