@@ -1,6 +1,6 @@
 ## Alex Chernysh
 
-**Staff Solutions Architect & Glue Engineer**
+**Solutions Architect & Glue Engineer**
 
 Building the calm layer between chaos and clarity.
 
