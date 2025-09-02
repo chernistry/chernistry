@@ -42,7 +42,7 @@ radar-beta
   axis mlo["MLOps Engineer"]
   axis ds["Data Scientist"]
 
-  curve seniority["Estimated seniority"]{3,3,3,4,5,5,5,5,3,2,3,3,2}
+  curve seniority["Estimated seniority"]{1,1,1,1,1,1,1,1,1,1,1,1,1}
   showLegend false
   min 1
   max 7
