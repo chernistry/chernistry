@@ -20,6 +20,12 @@ I specialize in:
 - **Security innovation**: Automated threat scoring pipeline saving 18 hrs/week
 - **Open-source contribution**: Created modular RAG framework with hybrid retrieval
 
+### Skills
+
+Core: Python; FastAPI; LangGraph; Agentic RAG; LLM Integration (OpenAI/Claude); Qdrant; Redis; PostgreSQL; Docker; AWS (boto3); Observability (Prometheus/OTel); CI/CD.
+
+Secondary: TypeScript/Node.js; Express; Next.js/React; Playwright (E2E); Supabase + Prisma; Telegram (Telethon); ETL/Redis Streams; Airflow/Prefect; Terraform/IaC; Kubernetes.
+
 
 ### Competency Chart
 
