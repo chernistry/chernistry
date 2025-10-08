@@ -1,7 +1,5 @@
 ## Alex Chernysh
 
-**Backend/Integration (Python) — AI‑assisted**
-
 Pragmatic engineer focusing on reliable integrations and backend services.
 
 ### What I Do
