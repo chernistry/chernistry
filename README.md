@@ -1,12 +1,13 @@
 ## Alex Chernysh
 
-Pragmatic engineer specializing in backend integrations and AI systems.
+**Senior AI Integration Lead & Architect.**  
+I build the **Central Nervous System** for companies.
 
-### Philosophy
+### Philosophy (The "Conductor" Mindset)
 
-- Keep it simple, deliver value.
-- Prefer practical over ceremonial.
-- Learn by building.
+- **Stop Coding, Start Architecting:** I design the System (Specs, Resilience, Observability); AI agents handle the implementation.
+- **Resilience is the Feature:** It's not done until it handles 429s, 503s, and scale.
+- **Bridge the Gap:** I turn chaotic business needs (Sheets, ad-hoc scripts) into rigid, observable engineering standards.
 
 ### Connect
 
