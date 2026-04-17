@@ -1,11 +1,5 @@
 ## Alex Chernysh
+Applied AI Systems Engineer. Agent infra, MCP, evals.
+**[Bernstein](https://bernstein.run)**: open-source multi-agent orchestrator. 21 adapters, worktree isolation per agent, janitor verification, MCP/A2A, HMAC audit trail. Deterministic Python control plane.
 
-**Senior AI Integration Lead & Architect.**  
-I build the **Central Nervous System** for companies.
-
-
-### Connect
-
-[LinkedIn](https://www.linkedin.com/in/alex-chernysh/) | [Email](mailto:hello@alexchernysh.com) | [Website](https://alexchernysh.com/)
-
-Based in 🇮🇱.
+🇮🇱 Tel Aviv · [LinkedIn](https://www.linkedin.com/in/alex-chernysh/) · [hello@alexchernysh.com](mailto:hello@alexchernysh.com) · [alexchernysh.com](https://alexchernysh.com/)
