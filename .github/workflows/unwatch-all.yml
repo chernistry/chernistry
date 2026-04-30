@@ -1,0 +1,104 @@
+name: Unwatch all repos
+
+# Manually-triggered cleanup: removes your "watching" subscription on every repo
+# you currently watch (or every repo except those in orgs you control). Useful
+# for periodic notification-noise cleanup.
+#
+# Setup (once):
+#   1. Create a classic PAT with only the `notifications` scope:
+#      https://github.com/settings/tokens/new?scopes=notifications&description=unwatch-all%20workflow
+#   2. Add it as repo secret UNWATCH_PAT:
+#        gh secret set UNWATCH_PAT --repo chernistry/chernistry
+#      (paste the token when prompted)
+#
+# Run:
+#   gh workflow run unwatch-all.yml
+#   gh workflow run unwatch-all.yml -f exclude_own=true
+#   gh workflow run unwatch-all.yml -f dry_run=true
+#
+# The default GITHUB_TOKEN does NOT have user-level subscription scope,
+# so a PAT secret is required.
+
+on:
+  workflow_dispatch:
+    inputs:
+      exclude_own:
+        description: "Skip repos in orgs you control (chernistry, sipyourdrink-ltd)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "List what would be unwatched without actually unwatching"
+        type: boolean
+        default: false
+
+permissions: {}
+
+jobs:
+  unwatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unwatch
+        env:
+          GH_TOKEN: ${{ secrets.UNWATCH_PAT }}
+          EXCLUDE_OWN: ${{ inputs.exclude_own }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "::error::Secret UNWATCH_PAT is not set. See workflow file header for setup instructions."
+            exit 1
+          fi
+
+          # Orgs treated as "own" when exclude_own=true. Edit this list if you
+          # add or rename orgs.
+          OWN_ORGS_REGEX='^(chernistry|sipyourdrink-ltd)/'
+
+          echo "Fetching watched repos..."
+          gh api 'user/subscriptions?per_page=100' --paginate \
+            --jq '.[].full_name' > all.txt
+          total=$(wc -l < all.txt | tr -d ' ')
+          echo "Currently watching: $total repos"
+
+          if [ "${EXCLUDE_OWN}" = "true" ]; then
+            grep -Ev "${OWN_ORGS_REGEX}" all.txt > target.txt || true
+            kept=$(grep -Ec "${OWN_ORGS_REGEX}" all.txt || true)
+            echo "Keeping $kept repos in your own orgs"
+          else
+            cp all.txt target.txt
+          fi
+
+          target_count=$(wc -l < target.txt | tr -d ' ')
+          echo "Will unwatch: $target_count repos"
+          echo
+
+          if [ "${DRY_RUN}" = "true" ]; then
+            echo "::notice::DRY RUN — no changes made. Repos that would be unwatched:"
+            cat target.txt
+            exit 0
+          fi
+
+          ok=0
+          fail=0
+          while IFS= read -r repo; do
+            [ -z "$repo" ] && continue
+            if gh api -X DELETE "/repos/${repo}/subscription" --silent 2>/dev/null; then
+              ok=$((ok+1))
+              echo "✓ $repo"
+            else
+              fail=$((fail+1))
+              echo "✗ $repo"
+            fi
+          done < target.txt
+
+          echo
+          echo "Unwatched: $ok"
+          echo "Failed:    $fail"
+
+          remaining=$(gh api 'user/subscriptions?per_page=100' --paginate --jq 'length' \
+            | awk '{s+=$1} END {print s+0}')
+          echo "Still watching: $remaining"
+
+          if [ "$fail" -gt 0 ]; then
+            exit 1
+          fi
