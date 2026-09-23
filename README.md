@@ -1,11 +1,19 @@
-## Alex Chernysh
-Applied AI Systems Engineer · multi-agent, RAG, MCP · evals.
+## Alex Chernysh - Applied AI Systems Engineer
+**Focus:** multi-agent systems, RAG, MCP, evals
 
-**Maintaining** [Bernstein](https://github.com/sipyourdrink-ltd/bernstein): open-source governance layer for AI agents (Apache-2.0). Declarative rules, deterministic scheduling, run records you can verify and replay.
+| Principle | Statement |
+| :--- | :--- |
+| **Build** | AI systems that demo well and survive Monday morning |
+| **Method** | Don't know the right way. Know every wrong way |
+| **Style** | Talk obvious, ship non-obvious |
 
-**Upstream work**
-- [TRACE](https://github.com/agentrust-io/trace-spec) Trust Record spec: the reproducibility claim for deterministic re-execution (§3.1.4), its schema and conformance vectors, schema/docs coverage guards, the software-only producer annex.
-- [CoSAI WS4](https://github.com/cosai-oasis/ws4-secure-design-agentic-systems) (OASIS Open Project): reviews on the agent-containment paper.
-- Hosted TRACE verifier: [mcp.bernstein.run](https://mcp.bernstein.run).
+### Current Work
 
-🇮🇱 Tel Aviv · [LinkedIn](https://www.linkedin.com/in/alex-chernysh/) · [hello@alexchernysh.com](mailto:hello@alexchernysh.com) · [alexchernysh.com](https://alexchernysh.com/)
+| Project | Role | Scope |
+| :--- | :--- | :--- |
+| [Bernstein](https://github.com/sipyourdrink-ltd/bernstein) | Maintainer | Governance layer, declarative rules, deterministic scheduling, Apache-2.0 |
+| [TRACE](https://github.com/agentrust-io/trace-spec) | Contributor | §3.1.4 reproducibility claim, schema, conformance vectors |
+| [CoSAI WS4](https://github.com/cosai-oasis/ws4-secure-design-agentic-systems) | Reviewer | OASIS: agent-containment |
+| [mcp.bernstein.run](https://mcp.bernstein.run) | Maintainer | Hosted TRACE verifier |
+
+🇮🇱 Tel Aviv · [bernstein.run](https://bernstein.run) · [alexchernysh.com](https://alexchernysh.com) · [LinkedIn](https://www.linkedin.com/in/alex-chernysh/)
