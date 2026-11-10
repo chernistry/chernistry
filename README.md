@@ -14,6 +14,6 @@ Applied AI systems engineer, Haifa, Israel. I build tooling that makes multi-age
 
 ### Earlier projects (archived)
 
-[voyant](https://github.com/chernistry/voyant) travel agent with fact checks · [kotef](https://github.com/chernistry/kotef) coding agent · [sentio](https://github.com/chernistry/sentio) RAG on LangGraph · [meulex](https://github.com/chernistry/meulex) Slack RAG assistant · [shafi](https://github.com/chernistry/shafi) legal question answering
+[voyant](https://github.com/chernistry/ai-projects-archive/tree/main/voyant) travel agent with fact checks · [kotef](https://github.com/chernistry/ai-projects-archive/tree/main/kotef) coding agent · [sentio](https://github.com/chernistry/ai-projects-archive/tree/main/sentio) RAG on LangGraph · [meulex](https://github.com/chernistry/ai-projects-archive/tree/main/meulex) Slack RAG assistant · [shafi](https://github.com/chernistry/shafi) legal question answering
 
 [bernstein.run](https://bernstein.run) · [alexchernysh.com](https://alexchernysh.com) · [LinkedIn](https://www.linkedin.com/in/alex-chernysh/)
