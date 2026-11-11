@@ -12,6 +12,12 @@ Applied AI systems engineer, Haifa, Israel. I build tooling that makes multi-age
 | [Brand impersonation detector](https://github.com/chernistry/brand-impersonation-detector) | Maintainer | Self-hosted detection of brand impersonation with signed evidence that verifies offline |
 | [mcp.bernstein.run](https://mcp.bernstein.run) | Maintainer | Hosted endpoint that verifies Bernstein run receipts |
 
+### Other projects
+
+- [RightLayout](https://github.com/chernistry/RightLayout) (Swift): macOS app that corrects text typed in the wrong keyboard layout, for English, Russian and Hebrew, with an on-device Core ML model. Community-maintained.
+- [trilingual-retrieval-bench](https://github.com/chernistry/trilingual-retrieval-bench) (Python): synthetic Russian, English and Hebrew documents with gold queries for checking retrieval quality, and a text pseudonymisation script.
+- [kobo-libra2-display](https://github.com/chernistry/kobo-libra2-display) (Shell, Python): a Kobo Libra 2 e-reader as a second e-ink display for a Mac, over Wi-Fi.
+
 ### Earlier projects (archived)
 
 [voyant](https://github.com/chernistry/ai-projects-archive/tree/main/voyant) travel agent with fact checks · [kotef](https://github.com/chernistry/ai-projects-archive/tree/main/kotef) coding agent · [sentio](https://github.com/chernistry/ai-projects-archive/tree/main/sentio) RAG on LangGraph · [meulex](https://github.com/chernistry/ai-projects-archive/tree/main/meulex) Slack RAG assistant · [shafi](https://github.com/chernistry/shafi) legal question answering
