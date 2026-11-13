@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chernistry/chernistry/main/assets/brand/profile-header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chernistry/chernistry/main/assets/brand/profile-header-light.svg">
+  <img alt="Alex Chernysh. alexchernysh.com." src="https://raw.githubusercontent.com/chernistry/chernistry/main/assets/brand/profile-header-light.svg">
+</picture>
+
 ## Alex Chernysh
 
 Applied AI systems engineer, Haifa, Israel. I build tooling that makes multi-agent runs reproducible and checkable.
