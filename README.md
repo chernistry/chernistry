@@ -13,8 +13,8 @@ Haifa, Israel. I build open-source tooling that makes the work of AI agents veri
 | Project | Role | What it is |
 | :--- | :--- | :--- |
 | [Bernstein](https://github.com/sipyourdrink-ltd/bernstein) | Maintainer | Open-source governance layer for AI agents: declarative rules, deterministic scheduling, a replayable run record. [mcp.bernstein.run](https://mcp.bernstein.run) verifies run receipts. Apache-2.0 |
-| [TRACE](https://github.com/agentrust-io/trace-spec) | Contributor | Open attestation spec for agentic systems: reproducibility claim (§3.1.4), schema, conformance vectors. 10 merged pull requests, including a TypeScript verifier |
-| [CoSAI WS4](https://github.com/cosai-oasis/ws4-secure-design-agentic-systems) | Contributor, one open pull request | OASIS workstream on secure design patterns for agentic systems |
+| [TRACE](https://github.com/agentrust-io/trace-spec) | Contributor | Open attestation spec for agentic systems: reproducibility claim (§3.1.4), schema, test vectors. 10 merged pull requests, including a TypeScript verifier |
+| [CoSAI WS4](https://github.com/cosai-oasis/ws4-secure-design-agentic-systems) | Author of one open pull request | OASIS workstream on secure design patterns for agentic systems |
 
 Most commits and pull requests in my activity are drafted by coding agents that I run. I answer for what is submitted under my name.
 
